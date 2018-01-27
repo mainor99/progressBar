@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>My Account</title>
+</head>
+<body>
+    <section class="menu_section">
+        <article class="menu_title">
+            <header>
+                <h1>My Account</h1>
+            </header>
+        </article>
+        <article class="menu_body">
+            <p>Click below to see how close are you to your target</p>
+            <button id="my_progress_button">My Progress</button>
+        </article>
+    <section>
+
+    <!-- Modal -->
+    <section id="modal_section" class="modal">
+        <section class="modal_content">
+            <header>
+                <h4>Your Progress</h4>
+            </header>
+            <section>
+                <article class="progress_bar_container">
+                    <span class="reached_text" >Reached:</span>
+                    <div id="progress_bar" class="progress_bar">
+                        <div id="progress_bar_percentage" class="progress_bar_percentage"></div>
+                        <div class="progress_bar_text" id="progress_bar_text">
+                            <span class="carret">&#94;</span>
+                            <span class="progress_bar_text_span" id="progress_bar_text_span"></span>
+                        </div>
+                    </div>
+                    <div class="target">Target <span id="target_span"></span></div>
+                </article>
+                <article class="summary">
+                    <i class="info_circle"></i>
+                    <span>You need <span id="total_needed_span"></span> more to reach your target.</span>
+                </article>
+            </section>
+        </section>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
